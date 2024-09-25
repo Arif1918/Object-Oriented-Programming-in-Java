@@ -14,6 +14,8 @@ public class MainClass {
         //Call years of service method to get years of experience of employee1 and print in this line
         System.out.println("Years Of Service : "+employee1.yearsOfService()+"\n");
 
+        //Method to raise salary of employee1 to 10% percent
+        employee1.raiseSalary(10);
         //Change the hire date of employee1 with "2019-08-01"
         employee1.setHireDate(LocalDate.parse("2019-08-01"));
         //Call printEmployeeDetails method to print the employee1 details

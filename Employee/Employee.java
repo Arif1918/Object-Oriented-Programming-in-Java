@@ -41,6 +41,11 @@ public class Employee {
     public int yearsOfService() {
         return Period.between(hireDate,LocalDate.now()).getYears();
     }
+
+    public void raiseSalary(double  percentage){
+        salary = salary + salary * percentage / 100;
+    }
+
     //Print Employee Details with name , salary and hire date
     public void printEmployeeDetails() {
         System.out.println("Name: "+name);
